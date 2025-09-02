@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+
+.header-scrolled {
+    background-color: #00000d;
+    transition-duration: 0.4s;
+}
+
+
+
+.stepper-scrolled {
+    position: fixed;
+    transition-duration: 0.4s;
+    box-shadow: 0px 2px 5px rgb(66, 65, 65);
+}
+
+.parallax {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mora-blasters.appspot.com/o/Designer%20(1).jpeg?alt=media&token=687db675-224c-4ad4-87db-e4d8b0068c7c");
+    min-height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxb {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mora-blasters.appspot.com/o/Designer%20(2).jpeg?alt=media&token=a6b34a2c-1093-4dbf-846f-8bd06fb6138f");
+    min-height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display {
+    box-shadow: 0 0 10px rgb(2, 8, 11);
+}
+
+.quick-icon:hover .user {
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
+
+.loadertext {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: load 0.2s linear forwards;
+}
+
+.barloader {
+    opacity: 0;
+    animation: barload 0.2s 0.4s linear forwards;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,aqua);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(14, 12, 12);
+}
+
+.disabled-link {
+    pointer-events: none;
+    /* Add any other styling for disabled links */
+  }
+
+@keyframes barload {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes load {
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:410px) {
+
+
+    .form {
+        width: 98% !important;
+    }
+
+    .form .input-base {
+        width: 95% !important;
+    }
+
+    .form fieldset {
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .map {
+        width: 95%;
+    }
+
+    .top-right,
+    .bottom-left {
+        height: 350px !important;
+        width: 95% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        border-radius: 30px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:620px) {
+    .watermark-img {
+        width: 97%;
+        height: auto;
+    }
+
+    .form .input-base {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:668px) {
+    .form {
+        width: 95%;
+    }
+
+    .teams-structure {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:730px) {
+
+}
+
+@media only screen and (max-width:930px) {
+
+}
+
+@media only screen and (max-width:1260px) {
+
+    .home-bottom {
+        height: auto;
+    }
+
+    .info-top {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .info-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-left,
+    .bottom-right {
+        width: 90%;
+        height: auto !important;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .top-right,
+    .bottom-left {
+        height: 400px;
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .parallax,
+    .parallaxb {
+        background-attachment: scroll;
+        background-attachment: fixed;
+    }
+
+    .bottom-text {
+        margin-top: 0px;
+    }
+
+    .info-important {
+        margin-top: 60px;
+    }
+}
