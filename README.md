@@ -15,6 +15,15 @@ Welcome to the official repository for the **Mora Blaster Cricket Tournament Reg
 
 ---
 
+## Built On
+
+- **React**: A JavaScript library for building user interfaces.
+- **React Router 6**: A collection of navigational components that compose declaratively with your application.
+- **GSAP (GreenSock Animation Platform)**: A robust JavaScript toolset for high-performance animations.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom user interfaces.
+
+---
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -27,7 +36,7 @@ You'll need a modern web browser and a code editor.
 
 1.  Clone the repository:
     ```
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone (https://github.com/Dulith-Kavinda/mora-blasters-web-app.git)
     ```
 2.  Navigate to the project directory:
     ```
